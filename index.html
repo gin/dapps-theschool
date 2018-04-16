@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Luigi Leung">
+  <!--
+                   NNN8
+                   ONNNNND
+                    DNNN8+++Z
+                     7NNI+++++8                                             ,8D,
+                      ZN?+++++++?                                      ,ZNNNNN+
+                       ?Z+++++++++?                                 D++++DNNN?
+                         $+++++++++O                             $+++++++DNN=
+                          ??+++++++++                         ?++++++++++NN
+                            D+++++++++   ?OD7II$D8?         I++++++++++++I
+         OD                   Z+++++++O+++++++++++++++N?   ?+++++++++++D
+        ++++++D                 D?+++++++++++++++++++++++D+++++++++++I
+       ++++++++++D                ,+++++++++++++++++++++++++++++++$?
+     =++++++++++++++$+            +++++++++++++++++++++++++++??$
+    ,++++++++++++++++++D?         +++++++++++++++++++++++++++
+   ,++++++++++++++++++++++Z      N+++?ND D+++++++++++++++++++D
+  ,++++++++++++++++++++++++++Z   ++++NNN.N++++++++++++$NN++++7
+  +++++++++++++++++++++++++++++I?++++DNNNN+++++++++++N..=N8++$
+ ++++++++++++++++++++++++I+$+++++++++++++++++++N+++++DNNNND++D
+D++++++++++++++++++++++7++++$+++D7777?++++++++++++++++DNN?+++D
+8++++++???????????????Z+++++++?N777777+++++88888D++++++++++++N
+      :8???????????????+++++++++777777+++++D$$$$N88++++++Z77D+
+            ?D?????????O+++++++++D77Z++++++O$$$$$$N+++++777777
+                   $Z???O++++++++++++++++++??????I++++++77777O
+                        ,+++++++++++++++++++????$+++++++I777D
+                         I+++++++++++++++++++??O+++++++++++,
+                       7??Z++++++++++++++++++++++++++++++
+                      7????7++++++++++++++++++++++++++D++
+                     $??????$++++++++++++++?????+++++++++,
+                    D??????,  +++++++++++++++++++++++++++$
+                   O?????????D O++++++++++++++++++?+++++++
+                      ?7?????????Z++++++++++++++++++++++++:
+                          O???D++++++++++++++++++O++++++++?
+                          D???++++++++++++++++++++++++++++?
+                         DOOZD++++++++++++++++++++++++++++
+                        8OOO?+++++++++++++++++++I++++++++D
+                        ?OOO8+++8+D++D++++++++++7++++++++++D  Z
+                           OI++++++$+++Z++++++++++++++++O+++D++O
+                            +++++++??$++++++++++OD+++++8+++++Z8?
+                            +++++++???+++++++++++++DODI++++????
+                            ++++++D???N++++++++++++++++++++???,
+                            D+++??????????????????????+++????N
+                             ???????????????????????????????D
+                               $???????$???????????????????N
+                                  ,?8??.          ,78DDD???
+  -->
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>Luigi Leung</title>
+  <link href="public/luigi.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" data-noprefix rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto+Slab:700|Raleway:500|Inconsolata" rel="stylesheet" data-noprefix>
+  <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico">
+</head>
+<body id="luigi">
+<div id="outside" class="lefthalf black">
+  <div class="homeLayout">
+    <div class="homeRow intro">
+    <div>
+      <h1>Hi there.</h1>
+      <h2>I'm Luigi. I like to automate things.</h2>
+      <br>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/luigileung" class="linkedin"><i class="fa fa-linkedin-square fa-fw"></i></a>
+        <a href="https://github.com/gin" class="github"><i class="fa fa-github-alt fa-fw"></i></a>
+        <a href="https://twitter.com/TILuigi" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+      </div>
+    </div>
+    </div>
+    <div class="homeRow footer">
+      <div>
+      <div class="phone">
+        <i class="fa fa-phone fa-fw fa-lg"></i>&thinsp;949-870-9270
+      </div>
+      <br>
+      <div class="mail">
+        <i class="fa fa-envelope fa-fw"></i><a href="mailto:luigileung@gmail.com"> luigileung@gmail.com</a>
+      </div>
+      <br>
+      <div class="made">
+        <i class="fa fa-globe fa-fw fa-lg"></i>&nbsp;Made with <i class="fa fa-heart fa-fw"></i> in <a href="https://www.google.com/maps/place/Orange+County,+CA/" class="location">Orange County</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" async></script>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Icons at center
+    $(".linkedin").mouseover(function() {
+      $("#outside").animate({backgroundColor: "#003366"}, 200); });
+    $(".github").mouseover(function() {
+      $("#outside").animate({backgroundColor: "#262626"}, 200); });
+    $(".twitter").mouseover(function() {
+      $("#outside").animate({backgroundColor: "#344152"}, 200); });
+    // Boycott Facebook temporarily. Friends still use Facebook Events.
+    //$(".facebook").mouseover(function() {
+    //  $("#outside").animate({backgroundColor: "#444444"}, 200); });
+
+    // Icons at bottom-right
+    $(".phone").mouseover(function() {
+      $(".fa-phone").animate({color: "#2980B9"}, 200); });
+    $(".mail").mouseover(function() {
+      $(".fa-envelope").animate({color: "#F1C40F"}, 200); });
+    $(".location").mouseover(function() {
+      $(".fa-globe").animate({color: "#2ECC71"}, 200); });
+  });
+</script>
+<script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-58212507-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
